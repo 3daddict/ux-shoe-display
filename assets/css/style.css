@@ -1,38 +1,58 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    height: 100%;   
-    overflow: hidden;
-    margin: 0px;
-    display: flex;
-    box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+  margin: 0px;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .column {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #left {
-    flex-shrink: 0;
-    width: 80px;
-    background: #29323c;
+  flex-shrink: 0;
+  width: 80px;
+  background: #29323c;
 }
 
 #right {
-    width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-}
-
-ul {
-    display: inline-flex;
-    list-style: none;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
 .bottom {
-    flex-grow: 1;
-    overflow-y: auto;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.dropshadow {
+    filter: drop-shadow(8px 8px 15px rgba(0,0,0,0.6));
+}
+
+.logo-wrapper {
+    background: rgb(27, 110, 219);
+    padding: 10px;
+}
+
+.logo-container {
+    margin: 0 auto;
+}
+
+.logo {
+    width: 60px;
+    margin-top: 5px;
 }
