@@ -34,6 +34,7 @@ body {
 
 .flexContainer {
   display: flex;
+  position: relative;
   justify-content: center;
   height: 100vh;
   align-items: center;
@@ -55,4 +56,19 @@ body {
 .logo {
     width: 60px;
     margin-top: 5px;
+}
+
+.details-button {
+    position: absolute;
+    bottom: 50px;
+
+}
+
+.shoe-title {
+    position: absolute;
+    top: 50px;
+    margin: 0;
+    font-family: 'Sedgwick Ave', cursive;
+    color: white;
+    font-size: 10rem;
 }
