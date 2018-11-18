@@ -57,6 +57,18 @@ body {
   color: rgb(27, 110, 219);
 }
 
+.radio-btn-group {
+  position: absolute;
+  right: 2%;
+  bottom: 30%;
+}
+
+.radio-btn-group input {
+  display: block;
+  margin: 15px auto;
+}
+
+
 .dropshadow {
     filter: drop-shadow(8px 8px 15px rgba(0,0,0,0.6));
 }
@@ -92,7 +104,7 @@ body {
     margin: 0;
     font-family: 'Coda', cursive;
     color: white;
-    font-size: 18rem;
+    font-size: 16rem;
 }
 
 .main-logo {
