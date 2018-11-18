@@ -44,6 +44,11 @@ body {
     filter: drop-shadow(8px 8px 15px rgba(0,0,0,0.6));
 }
 
+.branding-container {
+  display: flex;
+  justify-content: center;
+}
+
 .logo-wrapper {
     background: rgb(27, 110, 219);
     padding: 10px;
@@ -66,9 +71,51 @@ body {
 
 .shoe-title {
     position: absolute;
-    top: 50px;
+    top: 10%;
     margin: 0;
-    font-family: 'Sedgwick Ave', cursive;
+    font-family: 'Coda', cursive;
     color: white;
-    font-size: 10rem;
+    font-size: 18rem;
+}
+
+.main-logo {
+  position: absolute;
+  height: 50%;
+  top: 5%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.shoe-img {
+  position: absolute;
+  height: 30%;
+  top: 45%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.main-btn {
+  font-family: 'Nunito', sans-serif;
+  position: absolute;
+  bottom: 5%;
+  background-color: transparent;
+  color: rgb(128, 128, 128);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 28px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 2.5em;
+  width: 200px;
+  border: 2px rgb(128, 128, 128) solid;
+}
+
+.main-btn:hover {
+    background-color: rgb(27, 110, 219);
+    color: #fff;
+    border-color: #fff;
 }
