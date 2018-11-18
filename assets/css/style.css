@@ -40,6 +40,23 @@ body {
   align-items: center;
 }
 
+.top-icons {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: rgb(128, 128, 128);
+  font-size: 1.2em;
+}
+
+.top-icons svg {
+  margin: auto 5px;
+  cursor: pointer;
+}
+
+.top-icons svg:hover {
+  color: rgb(27, 110, 219);
+}
+
 .dropshadow {
     filter: drop-shadow(8px 8px 15px rgba(0,0,0,0.6));
 }
