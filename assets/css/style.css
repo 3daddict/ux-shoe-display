@@ -44,7 +44,7 @@ body {
   position: absolute;
   top: 2%;
   right: 2%;
-  color: rgb(128, 128, 128);
+  color: #b1b1b1;
   font-size: 1.2em;
 }
 
@@ -197,7 +197,7 @@ body {
   position: absolute;
   bottom: 5%;
   background-color: transparent;
-  color: rgb(128, 128, 128);
+  color: #b1b1b1;
   cursor: pointer;
   text-align: center;
   border-radius: 28px;
