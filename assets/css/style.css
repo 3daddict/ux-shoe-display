@@ -63,14 +63,80 @@ body {
   bottom: 30%;
 }
 
-.radio-btn-group input {
+.radio-container {
   display: block;
-  margin: 15px auto;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
+.radio-container svg{
+  color: #b1b1b1;
+  padding-top: 5px;
+  font-size: 1.0rem;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 2px transparent solid;
+  background-color: rgb(41, 41, 41);
+  border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+  background-color: rgb(27, 110, 219);
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: transparent;
+  border: 2px #b1b1b1 solid;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(177, 177, 177);
+}
+.radio-container:hover input:checked ~ .checkmark {
+  background-color: rgb(27, 110, 219);
+}
+
+.radio-container:hover .checkmark:after {
+  background-color: rgb(80, 80, 80);
+}
 
 .dropshadow {
-    filter: drop-shadow(8px 8px 15px rgba(0,0,0,0.6));
+  filter: drop-shadow(8px 8px 15px rgba(0, 0, 0, 0.6));
 }
 
 .branding-container {
@@ -79,32 +145,31 @@ body {
 }
 
 .logo-wrapper {
-    background: rgb(27, 110, 219);
-    padding: 10px;
+  background: rgb(27, 110, 219);
+  padding: 10px;
 }
 
 .logo-container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .logo {
-    width: 60px;
-    margin-top: 5px;
+  width: 60px;
+  margin-top: 5px;
 }
 
 .details-button {
-    position: absolute;
-    bottom: 50px;
-
+  position: absolute;
+  bottom: 50px;
 }
 
 .shoe-title {
-    position: absolute;
-    top: 10%;
-    margin: 0;
-    font-family: 'Coda', cursive;
-    color: white;
-    font-size: 16rem;
+  position: absolute;
+  top: 10%;
+  margin: 0;
+  font-family: "Coda", cursive;
+  color: white;
+  font-size: 16rem;
 }
 
 .main-logo {
@@ -128,7 +193,7 @@ body {
 }
 
 .main-btn {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   position: absolute;
   bottom: 5%;
   background-color: transparent;
@@ -144,7 +209,7 @@ body {
 }
 
 .main-btn:hover {
-    background-color: rgb(27, 110, 219);
-    color: #fff;
-    border-color: #fff;
+  background-color: rgb(27, 110, 219);
+  color: #fff;
+  border-color: #fff;
 }
