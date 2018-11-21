@@ -136,7 +136,7 @@ body {
 }
 
 .dropshadow {
-  filter: drop-shadow(8px 8px 15px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(12px 12px 20px rgba(0, 0, 0, 0.6));
 }
 
 .branding-container {
@@ -150,12 +150,81 @@ body {
 }
 
 .logo-container {
+  position: relative;
   margin: 0 auto;
 }
 
 .logo {
   width: 60px;
   margin-top: 5px;
+}
+
+.user-links {
+  margin-top: 50px;
+}
+
+.user-links ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.user-links li {
+  display: block;
+  height: 60px;
+  color: #b1b1b1;
+  font-size: 20px;
+}
+
+.user-links a {
+  color: #b1b1b1;
+  text-decoration: none;
+}
+
+.user-links a:hover {
+  color: rgb(27, 110, 219);
+}
+
+.shoe-links {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+	writing-mode: vertical-rl;
+}
+
+@supports (writing-mode: vertical-rl) or (-webkit-writing-mode: vertical-rl){
+	.shoe-links {
+		transform: rotate(180deg);
+	}
+}
+
+.shoe-links ol {
+  display: inline;
+  margin-right: 25px;
+  flex: 1; 
+}
+
+.shoe-links li {
+	display: inline-block;
+  margin-top: 25px;
+}
+
+.shoe-links a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  color: #b1b1b1;
+  text-decoration: none;
+}
+
+.shoe-links a:hover {
+  color: #fff;
+  border-left: 2px #fff solid;
+}
+
+.shoe-links a:active {
+  color: #fff;
+  border-left: 2px rgb(27, 110, 219) solid;
 }
 
 .details-button {
