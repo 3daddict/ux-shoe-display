@@ -136,7 +136,7 @@ body {
 }
 
 .dropshadow {
-  filter: drop-shadow(8px 8px 15px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(12px 12px 20px rgba(0, 0, 0, 0.6));
 }
 
 .branding-container {
@@ -150,12 +150,57 @@ body {
 }
 
 .logo-container {
+  position: relative;
   margin: 0 auto;
 }
 
 .logo {
   width: 60px;
   margin-top: 5px;
+}
+
+.shoe-links {
+  position: absolute;
+  bottom: 15px;
+  -ms-writing-mode: tb-rl; /* old syntax, IE */
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	-ms-transform: rotate(180deg);
+	padding: 2.75rem;
+	text-align: right;
+}
+
+@supports (writing-mode: vertical-rl) or (-webkit-writing-mode: vertical-rl){
+	.shoe-links {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+}
+
+.shoe-links ol {
+  display: inline;
+	padding: 0;
+}
+
+.shoe-links li {
+	display: inline;
+	padding: 0.5em 0;
+}
+
+.shoe-links a {
+  font-family: "Nunito", sans-serif;
+  color: #b1b1b1;
+  text-decoration: none;
+}
+
+.shoe-links a:hover {
+  color: #fff;
+  border-left: 2px #fff solid;
+}
+
+.shoe-links a:active {
+  color: #fff;
+  border-left: 2px rgb(27, 110, 219) solid;
 }
 
 .details-button {
