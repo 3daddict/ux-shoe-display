@@ -166,7 +166,7 @@ body {
 	-webkit-writing-mode: vertical-rl;
 	writing-mode: vertical-rl;
 	-ms-transform: rotate(180deg);
-	padding: 2.75rem;
+	padding-right: 3.0rem;
 	text-align: right;
 }
 
@@ -179,16 +179,17 @@ body {
 
 .shoe-links ol {
   display: inline;
-	padding: 0;
+
 }
 
 .shoe-links li {
-	display: inline;
-	padding: 0.5em 0;
+	display: inline-block;
+  margin-top: 25px;
 }
 
 .shoe-links a {
   font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
   color: #b1b1b1;
   text-decoration: none;
 }
