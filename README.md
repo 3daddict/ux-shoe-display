@@ -7,9 +7,9 @@ Link to [live version](https://3daddict.github.io/ux-shoe-display/).
   * Custom built CSS (no frameworks used)
   * Vertical Product Links
   * UX Layout and Effects
-  * Fully Responsive Design
 
 ### Planned additions
+  * Fully Responsive Design
   * Updated JavaScript
   * Color Selections
   * Better Product Images
